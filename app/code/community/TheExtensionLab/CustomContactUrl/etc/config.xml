@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TheExtensionLab_CustomContactUrl>
+            <version>0.1.0</version>
+        </TheExtensionLab_CustomContactUrl>
+    </modules>
+
+    <global>
+        <models>
+            <theextensionlab_customcontacturl>
+                <class>TheExtensionLab_CustomContactUrl_Model</class>
+            </theextensionlab_customcontacturl>
+        </models>
+
+        <events>
+            <controller_front_init_before>
+                <observers>
+                    <theextensionlab_customcontacturl>
+                        <class>theextensionlab_customcontacturl/observer</class>
+                        <method>controllerActionPredispatch</method>
+                    </theextensionlab_customcontacturl>
+                </observers>
+            </controller_front_init_before>
+        </events>
+
+    </global>
+
+    <default>
+        <contacts>
+            <contacts>
+                <use_custom>1</use_custom>
+                <custom_path>contact-us</custom_path>
+            </contacts>
+        </contacts>
+    </default>
+</config>
