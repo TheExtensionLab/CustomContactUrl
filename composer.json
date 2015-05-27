@@ -1,0 +1,14 @@
+{
+  "name":"theextensionlab/customcontacturl",
+  "type":"magento-module",
+  "description":"Extension to enable store owners to update the default Magento contact form url",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors":[
+    {
+      "name":"James Anelay",
+      "email":"james@theextensionlab.com"
+    }
+  ]
+}
